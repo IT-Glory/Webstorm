@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IndexedDB</title>
+</head>
+<body>
+    <!--
+
+    -->
+    <div id="container" class="container">
+        <div>
+            <label>输入信息</label>
+            <input type="text" id="msg-name" title="姓名">
+            <span>-</span>
+            <input type="text" id="msg-sex" title="性别">
+            <span>-</span>
+            <input type="text" id="msg-school" title="学校">
+            <span>-</span>
+            <input type="text" id="msg-major" title="专业">
+            <button type="button" id="btn-save">保存</button>
+        </div>
+        <div>
+            <label for="msg-keyWord">关键字查询</label>
+            <input type="text" id="msg-keyWord" placeholder="关键字">
+            <button type="button" id="btn-get">查询</button>
+        </div>
+    </div>
+    <script src="js/ajax-1.0.js"></script>
+    <script src="js/IDB-app.js"></script>
+</body>
+</html>

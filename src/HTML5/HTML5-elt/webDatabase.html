@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>本地数据库</title>
+    <link href="css/webDatabase-style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!--
+        1、创建访问数据库的对象
+        2、使用事务处理
+    -->
+    <div id="container" class="container">
+        <div id="cont-ipt" class="cont-ipt">
+            <label for="nickName">昵称：</label>
+            <input type="text" id="nickName" form="nickName">
+            <br/>
+            <label for="message">留言：</label>
+            <textarea id="message" rows="20"></textarea>
+            <button id="btn-msg" type="button" >提交留言</button>
+        </div>
+        <div id="cont-show" class="cont-show">
+            <table id="show-msg" class="tb-show" cellpadding="5px" cellspacing="0">
+                <thead>
+                    <tr>
+                        <td>昵称</td>
+                        <td>留言消息</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Glory</td>
+                        <td>第一次来玩</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+<script src="js/webDatabase-app.js"></script>
+</body>
+</html>
