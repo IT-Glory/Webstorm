@@ -2,7 +2,7 @@
  * Created by 荣耀 on 2016/4/23.
  */
 
-(function (window) {
+(function () {
     window.IDB = function (options) {
 
         //indexedDB操作集参数初始化
@@ -18,7 +18,8 @@
 
         //核心操作集
         var _actionSet = {
-            options: _opt
+            options: _opt,
+            operation: 'Glory'
         };
 
         /**
@@ -183,7 +184,7 @@
         //暴露indexedDB操作集
         return _actionSet;
     };
-})(window);
+})();
 
 /*------------------------------------------------------------------------------*/
 /** DOM操作 */
@@ -205,13 +206,11 @@ window.onload = function () {
                       'major:' + majorNode.value);
 
         //初始化indexedDB
-        IDB({version: '1', objectStoreName: 'gloryIDB'});
+        //IDB({version: '1', objectStoreName: 'gloryIDB'});
         /*IDB.open(function (result) {
            alert('open indexedDB result: ' + result);
         });*/
-        alert(ajax.before(function () {
-            return 'ajax before'
-        }));
+        alert(IDB.operation);
     }, false);
 
     //给搜索按钮添加点击事件
